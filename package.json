@@ -1,6 +1,7 @@
 {
   "name": "test_password",
   "version": "0.0.0",
+  "homepage": "https://tymivv.github.io/test_password/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
