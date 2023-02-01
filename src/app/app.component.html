@@ -1,0 +1,27 @@
+<div class="max-w-2xl container mx-auto pt-5 mt-[50px] text-gray-400 w-1/6">
+<h1 class="text-3xl">{{title | titlecase}}</h1>
+<div class="form-group flex flex-col items-centr ">
+  <label class="mr-4 mt-5">password:</label>
+  <input class="border border-black py-1 px-2 rounded-lg" name="password" [(ngModel)]="password" (ngModelChange)="onTitleChange()" />
+</div>
+<ul class="mt-5">
+  <li [ngClass]="{
+    colorText: textColorByLength, 
+    colorPasIsEasy:pasIsEasy,
+    colorPasIsMedium:pasIsMedium, 
+    colorPasIsStrong:pasIsStrong}">
+    the password is easy
+  </li>
+  <li [ngClass]="{
+    colorText: textColorByLength, 
+    colorPasIsMedium:pasIsMedium, 
+    colorPasIsStrong:pasIsStrong}">
+    the password is medium
+  </li>
+  <li [ngClass]="{
+    colorText: textColorByLength, 
+    colorPasIsStrong:pasIsStrong}">
+    the password is strong
+  </li>
+</ul>
+</div>
